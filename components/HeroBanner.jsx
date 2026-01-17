@@ -16,9 +16,9 @@ const HeroBanner = () => {
   const handleAddToCart = () => {
     // Add to cart functionality
     const product = {
-      id: 'garlic-pickle-400gm',
-      name: 'Garlic Pickle (রসুনের আচার) 400gm',
-      price: 380.00,
+      id: 'ghee-1kg',
+      name: 'Ghee/ (1 Kg) - সরের ঘি',
+      price: 1300.00,
       quantity: 1
     };
     
@@ -74,9 +74,9 @@ const HeroBanner = () => {
     setIsSubmitting(true);
 
     // Create WhatsApp message with order details
-    const productName = 'Garlic Pickle (রসুনের আচার) 400gm';
-    const price = '380.00৳';
-    const whatsappNumber = '8801757859893'; // 01753-501679 with country code
+    const productName = 'Ghee/ (1 Kg) - সরের ঘি';
+    const price = '1,300.00৳';
+    const whatsappNumber = '8801753501679'; // 01753-501679 with country code
     
     const message = `🛒 *New Order Request*
 
@@ -169,17 +169,49 @@ Thank you! 🙏`;
                 🍯 <span className="hidden sm:inline">Grown by nature & served by nature</span>
                 <span className="sm:hidden">Natural & Organic</span>
               </div>
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800 leading-tight">
-                Garlic Pickle
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-800 leading-tight">
+                সরের ঘি
                 <br />
-                <span className="text-green-700">(রসুনের আচার) 400gm</span>
+                <span className="text-green-700">Ghee/ (1 Kg)</span>
               </h1>
-              <p className="text-base sm:text-lg md:text-xl text-gray-600">
-                Premium quality garlic pickle with tamarind - A perfect blend of tangy, spicy, and sweet flavors
+              <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 leading-relaxed">
+                সম্পূর্ণ ভেজাল মুক্ত সরের ঘি - হাতে পেয়ে খেয়ে তারপরই মূল্য পরিশোধ করবেন
               </p>
               <div className="flex items-center space-x-4">
-                <span className="text-3xl sm:text-4xl font-bold text-green-700">380.00৳</span>
+                <span className="text-2xl sm:text-3xl md:text-4xl font-bold text-green-700">1,300.00৳</span>
               </div>
+              
+              {/* Product Features List */}
+              <div className="bg-white rounded-lg p-3 sm:p-4 md:p-5 border border-green-200 shadow-sm space-y-2 sm:space-y-3">
+                <div className="flex items-start">
+                  <span className="mr-2 text-base sm:text-lg flex-shrink-0">👉</span>
+                  <span className="text-xs sm:text-sm md:text-base text-gray-700 leading-relaxed">Honey Mart আপনাদেরকে দিচ্ছে সম্পূর্ণ ভেজাল মুক্ত সরের ঘি।</span>
+                </div>
+                <div className="flex items-start">
+                  <span className="mr-2 text-green-600 flex-shrink-0">✅</span>
+                  <span className="text-xs sm:text-sm md:text-base text-gray-700 leading-relaxed">ঘি হাতে পেয়ে খেয়ে তারপরই মূল্য পরিশোধ করবেন।</span>
+                </div>
+                <div className="flex items-start">
+                  <span className="mr-2 text-red-500 flex-shrink-0">🔥</span>
+                  <span className="text-xs sm:text-sm md:text-base text-gray-700 font-semibold leading-relaxed">ঘি তে ক্যাশব্যাক গ্যারান্টি 🔥</span>
+                </div>
+                <div className="flex items-start">
+                  <span className="mr-2 text-blue-500 flex-shrink-0">📲</span>
+                  <span className="text-xs sm:text-sm md:text-base text-gray-700 leading-relaxed">অর্ডার করতে আমাদের পেজে মেসেজ করুন অথবা ফোন করুনঃ <a href="tel:01911272277" className="text-green-700 font-semibold hover:underline break-all">01911272277</a></span>
+                </div>
+                <div className="flex items-start">
+                  <span className="mr-2 text-green-600 flex-shrink-0">🚚</span>
+                  <span className="text-xs sm:text-sm md:text-base text-gray-700 leading-relaxed">সারা বাংলাদেশে ক্যাশঅন হোম ডেলিভারি দিচ্ছি।</span>
+                </div>
+                <div className="flex items-start">
+                  <span className="mr-2 text-green-600 flex-shrink-0">☑️</span>
+                  <span className="text-xs sm:text-sm md:text-base text-gray-700 leading-relaxed">ভালো খান সুস্থ থাকুন Honey Mart সার্ভিসের সাথেই থাকুন।</span>
+                </div>
+                <div className="text-center pt-2 border-t border-green-200 mt-2">
+                  <span className="text-xs sm:text-sm italic text-gray-500">~Enjoy The Real Taste~</span>
+                </div>
+              </div>
+
               <div className="flex flex-wrap gap-3 sm:gap-4">
                 <button 
                   onClick={handleBuyNow}
@@ -228,7 +260,7 @@ Thank you! 🙏`;
                   ×
                 </button>
               </div>
-              <p className="text-green-100 mt-1 sm:mt-2 text-sm sm:text-base">Garlic Pickle (রসুনের আচার) 400gm - 380.00৳</p>
+              <p className="text-green-100 mt-1 sm:mt-2 text-sm sm:text-base">Ghee/ (1 Kg) - সরের ঘি - 1,300.00৳</p>
             </div>
 
             {/* Modal Body - Scrollable */}
@@ -327,16 +359,16 @@ Thank you! 🙏`;
               <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
                 <div className="flex justify-between items-center mb-2">
                   <span className="text-gray-600">Subtotal:</span>
-                  <span className="font-semibold text-gray-800">380.00৳</span>
+                  <span className="font-semibold text-gray-800">1,300.00৳</span>
                 </div>
                 <div className="flex justify-between items-center mb-2">
                   <span className="text-gray-600">Delivery:</span>
-                  <span className="font-semibold text-green-600">Free</span>
+                  <span className="font-semibold text-green-600">Free (2000৳+)</span>
                 </div>
                 <div className="border-t border-gray-300 pt-2 mt-2">
                   <div className="flex justify-between items-center">
                     <span className="font-bold text-lg text-gray-800">Total:</span>
-                    <span className="font-bold text-xl text-green-700">380.00৳</span>
+                    <span className="font-bold text-xl text-green-700">1,300.00৳</span>
                   </div>
                 </div>
               </div>
