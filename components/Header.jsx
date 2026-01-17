@@ -18,10 +18,10 @@ const Header = () => {
             <a href="#contact" className="text-gray-700 hover:text-green-700 transition text-sm lg:text-base">Contact</a>
           </nav>
           <div className="flex items-center">
-            <a href="tel:01753501679" className="text-green-700 font-semibold hover:underline text-xs sm:text-sm whitespace-nowrap">
+            <a href="tel:+8801728781929" className="text-green-700 font-semibold hover:underline text-xs sm:text-sm whitespace-nowrap">
               <span className="hidden sm:inline">📞 </span>
               <span className="sm:hidden">📞</span>
-              <span className="hidden sm:inline">01753-501679</span>
+              <span className="hidden sm:inline">+880 1728-781929</span>
             </a>
           </div>
         </div>

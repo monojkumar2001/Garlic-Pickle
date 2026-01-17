@@ -76,7 +76,7 @@ const HeroBanner = () => {
     // Create WhatsApp message with order details
     const productName = 'Ghee/ (1 Kg) - সরের ঘি';
     const price = '1,300.00৳';
-    const whatsappNumber = '8801753501679'; // 01753-501679 with country code
+    const whatsappNumber = '8801728781929'; // +880 1728-781929 with country code
     
     const message = `🛒 *New Order Request*
 
@@ -197,7 +197,7 @@ Thank you! 🙏`;
                 </div>
                 <div className="flex items-start">
                   <span className="mr-2 text-blue-500 flex-shrink-0">📲</span>
-                  <span className="text-xs sm:text-sm md:text-base text-gray-700 leading-relaxed">অর্ডার করতে আমাদের পেজে মেসেজ করুন অথবা ফোন করুনঃ <a href="tel:01911272277" className="text-green-700 font-semibold hover:underline break-all">01911272277</a></span>
+                  <span className="text-xs sm:text-sm md:text-base text-gray-700 leading-relaxed">অর্ডার করতে আমাদের পেজে মেসেজ করুন অথবা ফোন করুনঃ <a href="tel:+8801728781929" className="text-green-700 font-semibold hover:underline break-all">+880 1728-781929</a></span>
                 </div>
                 <div className="flex items-start">
                   <span className="mr-2 text-green-600 flex-shrink-0">🚚</span>

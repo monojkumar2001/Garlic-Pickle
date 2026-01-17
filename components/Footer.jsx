@@ -41,7 +41,7 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">Contact</h4>
             <ul className="space-y-2 text-gray-400">
-              <li>📞 <a href="tel:01753501679" className="hover:text-green-400 transition">01753-501679</a></li>
+              <li>📞 <a href="tel:+8801728781929" className="hover:text-green-400 transition">+880 1728-781929</a></li>
               <li className="mt-4">
                 <div className="space-y-2">
                   <div className="flex items-center">
