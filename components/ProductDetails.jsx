@@ -122,8 +122,16 @@ const ProductDetails = () => {
                   <span className="ml-2 font-semibold text-green-700">1,300.00৳</span>
                 </div>
                 <div>
-                  <span className="text-gray-600">ডেলিভারি:</span>
+                  <span className="text-gray-600">ডেলিভারি সময়:</span>
                   <span className="ml-2 font-semibold text-gray-800">2-3 দিন</span>
+                </div>
+                <div>
+                  <span className="text-gray-600">ডেলিভারি চার্জ:</span>
+                  <span className="ml-2 font-semibold text-gray-800">ঢাকা ৭০৳, ঢাকার বাইরে ১২০৳</span>
+                </div>
+                <div>
+                  <span className="text-gray-600">ফ্রি ডেলিভারি:</span>
+                  <span className="ml-2 font-semibold text-green-700">2000৳+ অর্ডারে</span>
                 </div>
               </div>
             </div>

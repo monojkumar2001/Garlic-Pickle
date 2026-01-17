@@ -226,6 +226,10 @@ Thank you! 🙏`;
                   <span>Cash on Delivery</span>
                 </div>
                 <div className="flex items-center">
+                  <span className="mr-1.5 sm:mr-2">🚚</span>
+                  <span>ডেলিভারি চার্জ: ঢাকা ৭০৳, ঢাকার বাইরে ১২০৳</span>
+                </div>
+                <div className="flex items-center">
                   <span className="mr-1.5 sm:mr-2">✅</span>
                   <span className="whitespace-nowrap">Free Delivery (2000৳+)</span>
                 </div>
@@ -362,8 +366,12 @@ Thank you! 🙏`;
                   <span className="font-semibold text-gray-800">1,300.00৳</span>
                 </div>
                 <div className="flex justify-between items-center mb-2">
-                  <span className="text-gray-600">Delivery:</span>
-                  <span className="font-semibold text-green-600">Free (2000৳+)</span>
+                  <span className="text-gray-600">Delivery Charge:</span>
+                  <span className="font-semibold text-gray-800 text-sm">ঢাকা ৭০৳ / ঢাকার বাইরে ১২০৳</span>
+                </div>
+                <div className="flex justify-between items-center mb-2">
+                  <span className="text-gray-600">Free Delivery:</span>
+                  <span className="font-semibold text-green-600 text-sm">2000৳+ অর্ডারে</span>
                 </div>
                 <div className="border-t border-gray-300 pt-2 mt-2">
                   <div className="flex justify-between items-center">
