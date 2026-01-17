@@ -7,10 +7,10 @@ const ProductGallery = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const galleryImages = [
-    { id: 1, src: "/assets/images/product.png", alt: "Garlic Pickle Product 1" },
-    { id: 2, src: "/assets/images/product.png", alt: "Garlic Pickle Product 2" },
-    { id: 3, src: "/assets/images/product.png", alt: "Garlic Pickle Product 3" },
-    { id: 4, src: "/assets/images/product.png", alt: "Garlic Pickle Product 4" },
+    { id: 1, src: "/assets/images/product.jpeg", alt: "Garlic Pickle Product 1" },
+    { id: 2, src: "/assets/images/product.jpeg", alt: "Garlic Pickle Product 2" },
+    { id: 3, src: "/assets/images/product.jpeg", alt: "Garlic Pickle Product 3" },
+    { id: 4, src: "/assets/images/product.jpeg", alt: "Garlic Pickle Product 4" },
   ];
 
   const handleViewClick = (image) => {

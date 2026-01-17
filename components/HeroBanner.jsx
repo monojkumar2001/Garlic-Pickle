@@ -232,7 +232,7 @@ Thank you! 🙏`;
               </div>
             </div>
             <div className="relative order-1 md:order-2 aspect-square max-w-md mx-auto md:max-w-none">
-             <img src="/assets/images/product.png" alt="Hero Banner" className='w-full h-full object-cover rounded-lg sm:rounded-xl' />
+             <img src="/assets/images/product.jpeg" alt="Hero Banner" className='w-full h-full object-cover rounded-lg sm:rounded-xl' />
             </div>
           </div>
         </div>
