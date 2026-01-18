@@ -18,7 +18,7 @@ const HeroBanner = () => {
     const product = {
       id: 'ghee-1kg',
       name: 'Ghee/ (1 Kg) - সরের ঘি',
-      price: 1300.00,
+      price: 1450.00,
       quantity: 1
     };
     
@@ -39,6 +39,15 @@ const HeroBanner = () => {
   };
 
   const handleBuyNow = () => {
+    // Track InitiateCheckout event in Facebook Pixel
+    if (typeof window !== 'undefined' && window.fbq) {
+      window.fbq('track', 'InitiateCheckout', {
+        content_name: 'Ghee/ (1 Kg) - সরের ঘি',
+        value: 1450.00,
+        currency: 'BDT'
+      });
+    }
+    
     setIsModalOpen(true);
   };
 
@@ -75,7 +84,7 @@ const HeroBanner = () => {
 
     // Create WhatsApp message with order details
     const productName = 'Ghee/ (1 Kg) - সরের ঘি';
-    const price = '1,300.00৳';
+    const price = '1,450.00৳';
     const whatsappNumber = '8801728781929'; // +880 1728-781929 with country code
     
     const message = `🛒 *New Order Request*
@@ -105,6 +114,23 @@ Thank you! 🙏`;
     
     // Create WhatsApp URL
     const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+    
+    // Track Purchase event in Facebook Pixel
+    if (typeof window !== 'undefined' && window.fbq) {
+      window.fbq('track', 'Purchase', {
+        content_name: productName,
+        content_ids: ['ghee-1kg'],
+        value: 1450.00,
+        currency: 'BDT'
+      });
+      
+      // Track InitiateCheckout
+      window.fbq('track', 'InitiateCheckout', {
+        content_name: productName,
+        value: 1450.00,
+        currency: 'BDT'
+      });
+    }
     
     // Open WhatsApp in new tab
     window.open(whatsappUrl, '_blank');
@@ -178,7 +204,7 @@ Thank you! 🙏`;
                 সম্পূর্ণ ভেজাল মুক্ত সরের ঘি - হাতে পেয়ে খেয়ে তারপরই মূল্য পরিশোধ করবেন
               </p>
               <div className="flex items-center space-x-4">
-                <span className="text-2xl sm:text-3xl md:text-4xl font-bold text-green-700">1,300.00৳</span>
+                <span className="text-2xl sm:text-3xl md:text-4xl font-bold text-green-700">1,450.00৳</span>
               </div>
               
               {/* Product Features List */}
@@ -264,7 +290,7 @@ Thank you! 🙏`;
                   ×
                 </button>
               </div>
-              <p className="text-green-100 mt-1 sm:mt-2 text-sm sm:text-base">Ghee/ (1 Kg) - সরের ঘি - 1,300.00৳</p>
+              <p className="text-green-100 mt-1 sm:mt-2 text-sm sm:text-base">Ghee/ (1 Kg) - সরের ঘি - 1,450.00৳</p>
             </div>
 
             {/* Modal Body - Scrollable */}
@@ -363,7 +389,7 @@ Thank you! 🙏`;
               <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
                 <div className="flex justify-between items-center mb-2">
                   <span className="text-gray-600">Subtotal:</span>
-                  <span className="font-semibold text-gray-800">1,300.00৳</span>
+                  <span className="font-semibold text-gray-800">1,450.00৳</span>
                 </div>
                 <div className="flex justify-between items-center mb-2">
                   <span className="text-gray-600">Delivery Charge:</span>
@@ -376,7 +402,7 @@ Thank you! 🙏`;
                 <div className="border-t border-gray-300 pt-2 mt-2">
                   <div className="flex justify-between items-center">
                     <span className="font-bold text-lg text-gray-800">Total:</span>
-                    <span className="font-bold text-xl text-green-700">1,300.00৳</span>
+                    <span className="font-bold text-xl text-green-700">1,450.00৳</span>
                   </div>
                 </div>
               </div>

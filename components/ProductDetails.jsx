@@ -119,7 +119,7 @@ const ProductDetails = () => {
                 </div>
                 <div>
                   <span className="text-gray-600">মূল্য:</span>
-                  <span className="ml-2 font-semibold text-green-700">1,300.00৳</span>
+                  <span className="ml-2 font-semibold text-green-700">1,450.00৳</span>
                 </div>
                 <div>
                   <span className="text-gray-600">ডেলিভারি সময়:</span>
